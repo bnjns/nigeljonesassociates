@@ -1,4 +1,6 @@
 # Nigel Jones Associates
+[![Known Vulnerabilities](https://snyk.io/test/github/bnjns/nigeljonesassociates/badge.svg?targetFile=package.json)](https://snyk.io/test/github/bnjns/nigeljonesassociates?targetFile=package.json)
+![Build and Deploy](https://github.com/bnjns/nigeljonesassociates/workflows/Build%20and%20Deploy/badge.svg?branch=master)
 
 This is the website for
 [Nigel Jones Associates](https://nigeljonesassociates.uk).

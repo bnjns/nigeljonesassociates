@@ -17,19 +17,19 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import About from '@/layout/Footer/About.vue'
-  import Contact from '@/layout/Footer/Contact.vue'
-  import Legal from '@/layout/Footer/Legal.vue'
+import { Component, Vue } from 'vue-property-decorator'
+import About from '@/layout/Footer/About.vue'
+import Contact from '@/layout/Footer/Contact.vue'
+import Legal from '@/layout/Footer/Legal.vue'
 
-  @Component({
-    components: {
-      About,
-      Contact,
-      Legal
-    }
-  })
-  export default class Upper extends Vue {}
+@Component({
+  components: {
+    About,
+    Contact,
+    Legal
+  }
+})
+export default class Upper extends Vue {}
 </script>
 
 <style lang="scss" scoped>

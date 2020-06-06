@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>About</h1>
-    <img style="max-width: 100%;" src="/images/freightyard.jpg" alt="">
+    <img alt="" src="/images/freightyard.jpg" style="max-width: 100%;">
     <p>Nigel Jones Associates offers advice both to organisations and individuals who are already involved in the UK
       rail industry and to those who are planning or evaluating whether to become involved.</p>
     <p>Rail transport is often perceived as being very complicated, particularly in comparison to competing transport
@@ -20,10 +20,10 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
-  @Component
-  export default class About extends Vue {}
+@Component
+export default class About extends Vue {}
 </script>
 
 <style lang="scss" scoped>

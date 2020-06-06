@@ -18,26 +18,26 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator'
-  import { ConsultantProps } from '@/types/consultants'
-  import { createMailLink, getFirstName, processAbout } from '@/utils'
+import { Component, Prop, Vue } from 'vue-property-decorator'
+import { ConsultantProps } from '@/types/consultants'
+import { createMailLink, getFirstName, processAbout } from '@/utils'
 
-  @Component
-  export default class Consultant extends Vue {
-    @Prop() readonly consultant!: ConsultantProps
+@Component
+export default class Consultant extends Vue {
+  @Prop() readonly consultant!: ConsultantProps
 
-    get firstName(): string {
-      return getFirstName(this.consultant)
-    }
-
-    get emailLink(): string | undefined {
-      return this.consultant.email && createMailLink(this.consultant.email)
-    }
-
-    get about(): string {
-      return processAbout(this.consultant)
-    }
+  get firstName(): string {
+    return getFirstName(this.consultant)
   }
+
+  get emailLink(): string | undefined {
+    return this.consultant.email && createMailLink(this.consultant.email)
+  }
+
+  get about(): string {
+    return processAbout(this.consultant)
+  }
+}
 </script>
 
 <style lang="scss" scoped>

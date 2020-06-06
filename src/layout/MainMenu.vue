@@ -4,7 +4,7 @@
       <b-container>
         <!-- Brand -->
         <b-navbar-brand :to="{ name: 'home' }">
-          <img src="/images/nja/nav-header.png" alt="Nigel Jones Associates Logo">
+          <img alt="Nigel Jones Associates Logo" src="/images/nja/nav-header.png">
         </b-navbar-brand>
 
         <!--  Toggler  -->
@@ -13,7 +13,7 @@
         <b-collapse id="menu--main" is-nav>
           <!--  Menu  -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item v-for="item in menu" :key="item.link" :to="{ name: item.link }">
+            <b-nav-item :key="item.link" :to="{ name: item.link }" v-for="item in menu">
               {{ item.text }}
             </b-nav-item>
           </b-navbar-nav>
@@ -24,13 +24,13 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import mainMenu from '@/data/menu'
+import { Component, Vue } from 'vue-property-decorator'
+import mainMenu from '@/data/menu'
 
-  @Component
-  export default class MainMenu extends Vue {
-    private readonly menu = mainMenu
-  }
+@Component
+export default class MainMenu extends Vue {
+  private readonly menu = mainMenu
+}
 </script>
 
 <style lang="scss" scoped>
