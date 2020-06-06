@@ -12,17 +12,17 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import { AppFooter, AppMenu, AppParallax } from '@/layout'
+import { Component, Vue } from 'vue-property-decorator'
+import { AppFooter, AppMenu, AppParallax } from '@/layout'
 
-  @Component({
-    components: {
-      AppMenu,
-      AppParallax,
-      AppFooter
-    }
-  })
-  export default class App extends Vue {}
+@Component({
+  components: {
+    AppMenu,
+    AppParallax,
+    AppFooter
+  }
+})
+export default class App extends Vue {}
 </script>
 
 <style lang="scss">

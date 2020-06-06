@@ -31,18 +31,18 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/pro-solid-svg-icons'
+import { Component, Vue } from 'vue-property-decorator'
+import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/pro-solid-svg-icons'
 
-  @Component
-  export default class Contact extends Vue {
-    private readonly contactEmail = 'nigel.jones@nigeljonesassociates.co.uk'
-    private readonly icons = {
-      address: faMapMarker,
-      email: faEnvelope,
-      phone: faPhone
-    }
+@Component
+export default class Contact extends Vue {
+  private readonly contactEmail = 'nigel.jones@nigeljonesassociates.co.uk'
+  private readonly icons = {
+    address: faMapMarker,
+    email: faEnvelope,
+    phone: faPhone
   }
+}
 </script>
 
 <style lang="scss" scoped>

@@ -1,7 +1,7 @@
 <template>
   <b-row>
-    <b-col md="4" class="d-none d-sm-none d-md-block">
-      <b-img thumbnail fluid src="/images/containers_in_port.jpg"></b-img>
+    <b-col class="d-none d-sm-none d-md-block" md="4">
+      <b-img fluid src="/images/containers_in_port.jpg" thumbnail></b-img>
     </b-col>
     <b-col md="8">
       <h3>Nigel Jones Associates provide strategic advice on rail, rail freight and planning within the rail
@@ -22,10 +22,10 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
-  @Component
-  export default class Home extends Vue {}
+@Component
+export default class Home extends Vue {}
 </script>
 
 <style lang="scss" scoped>

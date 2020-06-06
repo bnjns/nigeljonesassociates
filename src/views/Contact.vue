@@ -3,7 +3,7 @@
     <h1>Contact Us</h1>
     <p>If you would like us to get in touch you can find the relevant contact details below.</p>
     <b-card-group deck>
-      <b-card v-for="(contact, index) in contacts" :key="index" :header="contact.name" header-text-variant="">
+      <b-card :header="contact.name" :key="index" header-text-variant="" v-for="(contact, index) in contacts">
         <b-card-text>
           <h4>Email Address</h4>
           <p>
@@ -12,7 +12,7 @@
           <h4>Phone</h4>
           <p>{{ contact.phone }}</p>
           <h4>Post</h4>
-          <p v-for="line in contact.address" :key="line">{{ line }}</p>
+          <p :key="line" v-for="line in contact.address">{{ line }}</p>
         </b-card-text>
       </b-card>
     </b-card-group>
@@ -20,14 +20,14 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import { ContactDetails } from '@/types/contact'
-  import consultants from '@/data/consultants'
+import { Component, Vue } from 'vue-property-decorator'
+import { ContactDetails } from '@/types/contact'
+import consultants from '@/data/consultants'
 
-  @Component
-  export default class Contact extends Vue {
-    private readonly contacts: ContactDetails[] = consultants
-  }
+@Component
+export default class Contact extends Vue {
+  private readonly contacts: ContactDetails[] = consultants
+}
 </script>
 
 <style lang="scss" scoped>
