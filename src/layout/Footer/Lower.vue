@@ -10,12 +10,12 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
-  @Component
-  export default class Lower extends Vue {
-    private currentYear = new Date().getFullYear()
-  }
+@Component
+export default class Lower extends Vue {
+  private currentYear = new Date().getFullYear()
+}
 </script>
 
 <style lang="scss" scoped>

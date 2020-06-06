@@ -2,10 +2,10 @@
   <div id="parallax" v-show="show">
     <b-container>
       <b-row>
-        <b-col cols="12" md="5" lg="4" id="parallax--logo">
+        <b-col cols="12" id="parallax--logo" lg="4" md="5">
           <img src="/images/nja/header.png">
         </b-col>
-        <b-col cols="12" md="7" lg="8" id="parallax--headers">
+        <b-col cols="12" id="parallax--headers" lg="8" md="7">
           <h1>Strategies for Rail Freight</h1>
 
           <h2>Advising the rail freight industry</h2>
@@ -16,14 +16,14 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
-  @Component
-  export default class Parallax extends Vue {
-    get show(): boolean {
-      return this.$route.name === 'home'
-    }
+@Component
+export default class Parallax extends Vue {
+  get show(): boolean {
+    return this.$route.name === 'home'
   }
+}
 </script>
 
 <style lang="scss" scoped>

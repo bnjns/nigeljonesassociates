@@ -4,25 +4,25 @@
     <p>Both our consultants are highly experienced in the rail freight and transport industries.</p>
     <table style="width: 100%;">
       <tbody>
-      <consultant v-for="(consultant, index) in consultants" :key="index" :consultant="consultant"/>
+      <consultant :consultant="consultant" :key="index" v-for="(consultant, index) in consultants"/>
       </tbody>
     </table>
   </div>
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator'
-  import consultants from '@/data/consultants'
-  import Consultant from '@/components/Consultant.vue'
+import { Component, Vue } from 'vue-property-decorator'
+import consultants from '@/data/consultants'
+import Consultant from '@/components/Consultant.vue'
 
-  @Component({
-    components: {
-      Consultant
-    }
-  })
-  export default class Consultants extends Vue {
-    private readonly consultants = consultants
+@Component({
+  components: {
+    Consultant
   }
+})
+export default class Consultants extends Vue {
+  private readonly consultants = consultants
+}
 </script>
 
 <style lang="scss" scoped>

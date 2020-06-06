@@ -1,4 +1,5 @@
 # Nigel Jones Associates
+![Build and Deploy](https://github.com/bnjns/nigeljonesassociates/workflows/Build%20and%20Deploy/badge.svg?branch=master)
 
 This is the website for
 [Nigel Jones Associates](https://nigeljonesassociates.uk).
