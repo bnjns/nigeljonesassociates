@@ -1,0 +1,25 @@
+h1, h2, h3 {
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  color: $colour_blue_dark;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+h2 {
+  color: $colour_blue_dark;
+  margin: 1.5em 0 0.5em 0;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 1.5em;
+}

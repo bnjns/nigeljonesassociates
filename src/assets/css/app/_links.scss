@@ -1,0 +1,5 @@
+a:not(.btn) {
+  &, &:hover, &:visited, &:active {
+    color: $colour_blue_medium;
+  }
+}
