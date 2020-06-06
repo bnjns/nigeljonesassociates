@@ -2,7 +2,11 @@
   <div>
     <h1>Consultants</h1>
     <p>Both our consultants are highly experienced in the rail freight and transport industries.</p>
-    <table style="width: 100%;">
+    <table style="width: 100%;" aria-describedby="Our consultants">
+      <tr class="sr-only">
+        <th>Picture</th>
+        <th>Details</th>
+      </tr>
       <tbody>
       <consultant :consultant="consultant" :key="index" v-for="(consultant, index) in consultants"/>
       </tbody>

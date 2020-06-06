@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>About</h1>
-    <img alt="" src="/images/freightyard.jpg" style="max-width: 100%;">
+    <img alt="Freightyard" src="/images/freightyard.jpg" style="max-width: 100%;">
     <p>Nigel Jones Associates offers advice both to organisations and individuals who are already involved in the UK
       rail industry and to those who are planning or evaluating whether to become involved.</p>
     <p>Rail transport is often perceived as being very complicated, particularly in comparison to competing transport

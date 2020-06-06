@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col cols="12" id="parallax--logo" lg="4" md="5">
-          <img src="/images/nja/header.png">
+          <img src="/images/nja/header.png" alt="Nigel Jones Associates Logo">
         </b-col>
         <b-col cols="12" id="parallax--headers" lg="8" md="7">
           <h1>Strategies for Rail Freight</h1>

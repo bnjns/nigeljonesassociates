@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td class="consultant-image">
-      <img :src="consultant.image" alt="" width="180">
+      <img :src="consultant.image" :alt="consultant.name" width="180">
     </td>
     <td class="consultant-about">
       <div v-html="about"></div>
