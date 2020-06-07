@@ -27,7 +27,19 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always'],
     'array-bracket-spacing': ['warn', 'never'],
     'no-trailing-spaces': ['warn'],
-    'template-curly-spacing': ['warn', 'always']
+    'template-curly-spacing': ['warn', 'always'],
+    '@typescript-eslint/member-delimiter-style': [
+      'warn', {
+        multiline: {
+          delimiter: 'none',
+          requireLast: true
+        },
+        singleline: {
+          delimiter: 'semi',
+          requireLast: false
+        }
+      }
+    ]
   },
   overrides: [
     {

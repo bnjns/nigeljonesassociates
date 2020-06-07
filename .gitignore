@@ -1,13 +1,18 @@
 .DS_Store
 node_modules
 /dist
+/tsc
 
+/coverage
+/coverage-unit
+/coverage-e2e
 /tests/e2e/videos/
 /tests/e2e/screenshots/
+/tests/reports
 
 # env files
 .env
-.env
+.env.local
 .env.*.local
 
 # Log files
